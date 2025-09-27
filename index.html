@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoShop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="font/css/all.min.css">
+    <link rel="stylesheet" href="font/css/fontawesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="Screenshot 2025-09-19 100321.png" alt="">
+                <nav>
+                    <ul class="off">
+                        <li><a href="#clothes" title="clothes">Clothes</a></li>
+                        <li><a href="#shoes" title="shoes">Shoes</a></li>
+                        <li><a href="#">Hats</a></li>
+                        <li><a href="#">Electronics</a></li>
+                    </ul>
+
+                    <ul class="mobile-nav">
+                        <button class=" close-toggle toggle" onclick="closemenu()" close menu><i class="fas fa-times"></i></button>
+                        <li><a href="#clothes">Clothes</a></li>
+                        <li><a href="#shoes">Shoes</a></li>
+                        <li><a href="#">Hats</a></li>
+                        <li><a href="#">Electronics</a></li>
+                          <button class="user-button">Sign in</button>
+                    </ul>
+
+                   
+                </nav>
+            </div>
+
+            <div class="search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search Products...">
+            </div>
+            <div class="right">
+                 <div class="user">
+                <a href="#" class="cart" title="wishlist">
+                    <i class="fa fa-heart" title="wishlist"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="#" class="cart" title="cart" onclick="showcart()">
+                    <i class="fa fa-cart-plus"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <button class="user-button">Sign in</button>
+
+            </div>
+            <div class="togg">
+                 <button class="search-toggle" title="search">
+                <i class="fa fa-search"></i>
+            </button>
+            <button class="toggle" onclick="showmenu()" title="show menu">
+                <i class="fa fa-bars"></i>
+            </button>
+            </div>
+            </div>
+           
+           
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to NeoShop <br>
+                Your one-stop shop for all your needs!</h1>
+            <p>discover new arrivals across fashion and electronics. <br> Fast experience and secure checkout.</p>
+            <div class="hero-btn">
+                <button class="shop">Shop Now</button>
+                <button>Explore Tech</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="carousel" id="heroCarousel">
+                <div class="carousel-slide" id="heroSlide">
+                    <div class="slide">
+                        <img src="images/shoe 2.jpeg" alt="Slide 1">
+                        <div class="flash-sale">🔥 Flash Sale — 30% OFF</div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/Cool SHoes.jpeg" alt="Slide 2">
+                        <div class="flash-sale">🔥 Flash Sale — 25% OFF</div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/Men's Sneakers Platform Shoes Comfortable White Casual Shoes Trend Lace-up Vulcanized Shoe Outdoor.jpeg" alt="Slide 3">
+                        <div class="flash-sale">🔥 Flash Sale — 40% OFF</div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/shirt 1.jpeg" alt="Slide 4">
+                        <div class="flash-sale">🔥 Flash Sale — 15% OFF</div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/FLIP BLACK GRAPHIC HOODIE.jpg" alt="Slide 5">
+                        <div class="flash-sale">🔥 Flash Sale — 50% OFF</div>
+                    </div>
+                </div>
+
+                <button class="prev" aria-label="Previous slide">&#10094;</button>
+                <button class="next" aria-label="Next slide">&#10095;</button>
+
+                <div class="dots" id="heroDots" role="tablist" aria-label="Slide indicators"></div>
+            </div>
+        </div>
+    </section>
+    <section class="products">
+        <h2 id="clothes">Clothes</h2>
+        <div class="sep">
+            <p>Fresh fits to match your mood</p>
+            <button>View all</button>
+        </div>
+        <div class="products-container">
+            <div class="card">
+                <img src="images/shirt 1.jpeg" alt="">
+                <div class="bottom">
+                    <h3>Jacket</h3>
+                    <h3>₦28000</h3>
+                </div>
+                <button>Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="images/shirt 2.jpeg" alt="">
+                <div class="bottom">
+                    <h3>Classic Tee</h3>
+                    <h3>₦8000</h3>
+                </div>
+                <button>Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="images/shirt 3.jpg" alt="">
+                <div class="bottom">
+                    <h3>Synarchy Tee</h3>
+                    <h3>₦18000</h3>
+                </div>
+                <button>Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="images/shirt 4.jpg" alt="">
+                <div class="bottom">
+                    <h3>Classic Hoodie</h3>
+                    <h3>₦40000</h3>
+                </div>
+                <button>Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="images/shirt 5.jpg" alt="">
+                <div class="bottom">
+                    <h3>Beige Hoodie</h3>
+                    <h3>₦35000</h3>
+                </div>
+                <button>Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="images/shirt 6.jpeg" alt="">
+                <div class="bottom">
+                    <h3>Summer Dress</h3>
+                    <h3>₦20000</h3>
+                </div>
+                <button>Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="images/shirt 7.jpg" alt="">
+                <div class="bottom">
+                    <h3>Summer Dress</h3>
+                    <h3>₦20000</h3>
+                </div>
+                <button>Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="images/shirt 8.jpg" alt="">
+                <div class="bottom">
+                    <h3>Summer Dress</h3>
+                    <h3>₦20000</h3>
+                </div>
+                <button>Add to cart</button>
+            </div>
+        </div> <br><br>
+        <h2 id="shoes">Shoes</h2>
+        <div class="sep">
+            <p>Fresh fits to match your mood</p>
+            <button>View all</button>
+        </div>
+        <div class="products-container">
+            <div class="card">
+                <img src="images/shoe 1.jpeg" alt="">
+                <div class="bottom">
+                    <h3>Jacket</h3>
+                    <h3>₦28000</h3>
+                </div>
+                <button>Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="images/shoe 2.jpeg" alt="">
+                <div class="bottom">
+                    <h3>Classic Tee</h3>
+                    <h3>₦8000</h3>
+                </div>
+                <button>Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="images/shoe 3.jpeg" alt="">
+                <div class="bottom">
+                    <h3>Synarchy Tee</h3>
+                    <h3>₦18000</h3>
+                </div>
+                <button>Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="images/Converse Chuck Taylor All Star High-Top Sneaker.jpeg" alt="">
+                <div class="bottom">
+                    <h3>Converse Chuck</h3>
+                    <h3>₦40000</h3>
+                </div>
+                <button>Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="images/Men's Sneakers Platform Shoes Comfortable White Casual Shoes Trend Lace-up Vulcanized Shoe Outdoor.jpeg" alt="">
+                <div class="bottom">
+                    <h3>Beige Hoodie</h3>
+                    <h3>₦35000</h3>
+                </div>
+                <button>Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="images/timber.jpeg" alt="">
+                <div class="bottom">
+                    <h3>Timber Land</h3>
+                    <h3>₦100000</h3>
+                </div>
+                <button>Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="images/naked-wolf.jpeg" alt="">
+                <div class="bottom">
+                    <h3>Naked Wolf</h3>
+                    <h3>₦70000</h3>
+                </div>
+                <button>Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="images/Cool SHoes.jpeg" alt="">
+                <div class="bottom">
+                    <h3>Summer Dress</h3>
+                    <h3>₦20000</h3>
+                </div>
+                <button>Add to cart</button>
+            </div>
+        </div>
+    </section>
+    <div class="cart-box">
+        <button class="close-btn" onclick="closecart()">
+            <i class="fas fa-times"></i>
+        </button>
+        <h1>Cart</h1> <br><br>
+        <p>your cart is empty. please add items to view them.</p>
+
+        <button class="check-out">Checkout</button>
+    </div>
+</body>
+ <footer>
+        <div class="quick">
+            <div class="quick-links">
+                <a href="#clothes">Clothes</a>
+                <a href="#shoes">Shoes</a>
+                <a href="#hats">Hats</a>
+                <a href="#">Electronics</a>
+            </div>
+            <div class="touch">
+                <p>hello@neoshop.com</p>
+                <div clas="icons">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="line">
+
+        </div>
+        <div class="foot-bot">
+            <div>
+                <p>&copy;2025 NeoShop. All rights reserved</p>
+            </div>
+            <div>
+                <p>Terms and Conditions. <span>Privacy Policy</span></p> <br>
+            </div>
+
+        </div>
+    </footer>
+ <script>
+     function showmenu() {
+            document.querySelector('.mobile-nav').style.display = 'flex';
+        }
+
+        function closemenu() {
+            document.querySelector('.mobile-nav').style.display = 'none';
+        }
+
+         function showcart () {
+            document.querySelector('.cart-box').style.display = 'flex';
+        }
+         function closecart() {
+            document.querySelector('.cart-box').style.display = 'none';
+        }
+    (function(){
+      const slideContainer = document.getElementById('heroSlide');
+      const carousel = document.getElementById('heroCarousel');
+      const prevBtn = carousel.querySelector('.prev');
+      const nextBtn = carousel.querySelector('.next');
+      const dotsContainer = document.getElementById('heroDots');
+
+      let slides = Array.from(slideContainer.children);
+      let totalSlides = slides.length;
+      let index = 0;
+      const AUTOPLAY_MS = 4000;
+      let timer = null;
+
+      function buildDots(){
+        dotsContainer.innerHTML = '';
+        for(let i=0;i<totalSlides;i++){
+          const d = document.createElement('button');
+          d.className = 'dot' + (i===0 ? ' active' : '');
+          d.setAttribute('aria-label', 'Go to slide ' + (i+1));
+          d.addEventListener('click', ()=>{ goToSlide(i); resetAutoplay(); });
+          dotsContainer.appendChild(d);
+        }
+      }
+
+      function updateSlide(){
+        slideContainer.style.transform = `translateX(${-index * 100}%)`;
+        const dots = Array.from(dotsContainer.children);
+        dots.forEach((d,i)=> d.classList.toggle('active', i===index));
+      }
+
+      function nextSlide(){ index = (index + 1) % totalSlides; updateSlide(); }
+      function prevSlide(){ index = (index - 1 + totalSlides) % totalSlides; updateSlide(); }
+      function goToSlide(i){ index = i; updateSlide(); }
+
+      nextBtn.addEventListener('click', ()=>{ nextSlide(); resetAutoplay(); });
+      prevBtn.addEventListener('click', ()=>{ prevSlide(); resetAutoplay(); });
+
+      function startAutoplay(){ if(timer) return; timer = setInterval(nextSlide, AUTOPLAY_MS); }
+      function stopAutoplay(){ if(timer){ clearInterval(timer); timer = null; } }
+      function resetAutoplay(){ stopAutoplay(); startAutoplay(); }
+
+      carousel.addEventListener('mouseenter', stopAutoplay);
+      carousel.addEventListener('mouseleave', startAutoplay);
+      carousel.addEventListener('focusin', stopAutoplay);
+      carousel.addEventListener('focusout', startAutoplay);
+
+      // touch swipe
+      let touchStartX = 0;
+      let touchEndX = 0;
+      carousel.addEventListener('touchstart', (e)=>{ stopAutoplay(); touchStartX = e.touches[0].clientX; });
+      carousel.addEventListener('touchmove', (e)=>{ touchEndX = e.touches[0].clientX; });
+      carousel.addEventListener('touchend', ()=>{
+        const dx = touchStartX - touchEndX;
+        const threshold = 40;
+        if(Math.abs(dx) > threshold){ if(dx > 0) nextSlide(); else prevSlide(); }
+        resetAutoplay();
+      });
+
+      // init
+      buildDots();
+      updateSlide();
+      startAutoplay();
+
+      window.heroCarouselRefresh = function(){
+        slides = Array.from(slideContainer.children);
+        totalSlides = slides.length;
+        buildDots();
+        index = 0;
+        updateSlide();
+      };
+    })();
+    </script>
+
+</html>
